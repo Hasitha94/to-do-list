@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+    <div>
+        <h1 id="header">To Do List</h1>
+    </div>
+    <div id="wrapper">
+        <form id="taskForm">
+            <input type="text" id="txttask">
+            <button id="sub">Add</button>
+        </form>
+
+        <ul id="results">  
+        </ul>
+    </div>
+
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        body{
+            background-color: rgb(240, 229, 29);
+            min-height: 108vh;
+            font-family: poppins;
+        }
+        #wrapper{width: 80%;margin: 0 auto;padding: 2em;max-width: 600px;}
+        form{margin-bottom: 0.8em;display: flex;justify-content: space-between;}
+        input,button{padding: 0.5em;}
+        li{cursor: pointer;color: rgb(0, 0, 0);display: flex;align-items: center;justify-content: space-between;background-color: rgb(139, 202, 238);margin-bottom: 0.8em;padding: 0.3em;border: 1px solid black;}
+        .del{background: red;color: rgb(253, 251, 251);}
+        .done{background: rgb(10, 216, 82);color: rgb(248, 246, 246);}
+        input,.item{flex: 1;}
+        ul{list-style: none;}
+        #sub{background-color: black;color: white;}
+        #header{text-align: center;padding-top: 40px;}
+    </style>
+
+    <script src="js.js" ></script>
+</body>
+</html>
